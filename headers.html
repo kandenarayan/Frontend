@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .external {
+
+            background-color: skyblue;
+            width: 100%;
+            height: 120px;
+        }
+
+        .left img {
+            margin: 20px;
+            width: 120px;
+        }
+
+        .right {
+            width: 600px;
+            float: right;
+            margin-top: 30px
+        }
+
+        .left {
+            width: 300px;
+            float: left
+        }
+
+        .right li {
+            display: inline;
+            margin-left: 60px;
+            font-size: 18px
+        }
+
+        .sec1external {
+            height: 600px;
+            background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20201106/pngtree-3d-india-smoke-flag-celebrating-republic-day-background-image_461904.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover
+        }
+
+        .cen {
+            background-position: center;
+            background-color: aqua;
+            transform: translate(-50%, -50%);
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            width:300px;
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="external">
+            <div class="left">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANgAAACiCAMAAAAUR/N4AAAAeFBMVEX////ZAADVAAD53t786urbPT3fTU3/2gD9zQD/4AD/4gD/3AD+0wD/2AD/3gD8yQDvjgDthwDxlwD0pwDqdwDpcADynAD3swDsgQDnaQDzowD6vwDiTQDrfADmZADlXgDkVQD2rQDgPgDeMwDbHQD4uQD/6gDdRAAo2XFQAAAMgklEQVR4nO1ciXbjqhK84i3CEoh9EUhCC0T//4cPZe6dJXESJx7bmvNUZyaZ8UJcAqqrm1b++uvAgQMHDhw4cODAgQMHDhw4cODAgQMHfjv+tUP8Dl7//g/YHf77e4gVu8NB7CC2E+yLWIzruixL/A1D7YoY5Vo4xynn14+1K2Kpa9ux60Jn5qvH2guxfgQF8OvQr8UqKQ35oWUBfzwxJRSlcVCskyJS1Q4CAMWo/dOJtTIWM6ckzl2fMrF5FkqzCLj6+pztgdho+7aL3cgtD8zrSQY60WUultZ1yx9MbNDrYoaub+04sYxuMIMMTAUqs05+dc52QCwvvahlSwNXWemps8wWLKg+TG1Q/Ksx7fHE1Gqt5G3fSjN3lLKWKRoEHx3tl9h3XxWQxxPjKrhZUTsw7SgaljBzZCnTakic9j374pQ9nlg0lA6sH4aBkoJ6oxORQ3CjdeMqKNVf3GSPJwZWKsOkVNYOzBk30HGJht46a1SObl8d9vHEchjjVNt2lJyiiSoRuPG6p0wQ1covD7oHYjFIJgerHOk1a70UgnGbRVLz/us+fw/ECsB6xbteOqGVMgOlLaOM2clcMeYuiK2c0lHrlJTQbddKS1tCey3JFYnZLogFMWhmtfMuBy8x2KEXWe8tezb5fzKxQeQtZZyeOKdDyCGaO6mkYUz96cSo4cpNxnFNjZZcySSlZil92QLvhFi0E8/+13iqnbRcWpN8Ozk7XTHmLogVNMmkjZE5XeFaGMG1chw6eUUKvQ9iBU+CuTQJnbhnVE+GaS38NSPuhNg6TW6kxAtHHZ2058I5dIUm7oYYUEmCnIK5SdAkZs5Vlv5rajl7IVbEYSnmESwzQWEAkQEKx6sG3A0x2RUdB4vqYhiLThVd/zmtf2lSbkgsdsUnFhMbisWDoGIR5mJUxWwvJwaKtaUvmN2Q2DI5eXHNE+is7XUxsKWwXciTNl8+Y7N1vmIvftItl6KsEBHjhdToUBR+DroD0yAzvVleSCxygurK3HEpFlE0uMaX1Zkii2Aw6+JHoHtJJOjGi94HAqlhiV8rzU3FYyQYkQZeEo8iBUXS86LXYugH6sB4kSjOU14VCNX9q2duSgywE4EENfzjw5PIijCN3ZIlY1YxuDG2Hy/FpUeYQOjR9Hp2byv3kdck/2TkP8w/Il/4FHLmvBQtXRWV8WPxGAyGEBJY8vX1kzeOY7GF2JO8Wqb4nogsPfXSaTZKNwOnlXVsoXx4jxooBNouGWnS2aV+8wC9uBPxmCDcvsOs5QpIqkQv2Qy4GiRNQ2eVfoeYQtgjZEr8RsHn9s4DZAlJiJDq7WPK1eYM2hOnrM4ZpzBbBV/3nKo33zGmEyHI+/rNlXAHSwWiy7wgwfCNcnXshWVcKqWEEJRlUozSnHMa88bWnDlCeUCPyNsZ2328ovJ5M2R9NGe3w+phG1jXdRbzNnRjy7WVUlGYTHfuOsi8tDMtgvQ7xuZOJnjhJTF53tC5knXL6bioIoYwtXM3drMS89iz2TD+Oj6BzpSZk/F1etfU3MvdgxFhQVDCvnv1cZhVagzD0jPWjYMM48hSN6g1KdW+Wrw5gBhMHKzs+87kjmmLK43BiVT6hYpHkW1vDG07iH4ZlVPjzMxYKDWpwH6Vj9jiMnk8Taf0keG6Zz7WEiLItuWHXz5V1LYf56wxVucZa2XbdZTJOe8fFtQvFyFMmBjiHYQfHwfeNdFcdWmmjZpYf16PSkuVI1jbBj3MYxjnVsxqHdTI+59kESwakZSvjSnFGafxUGJ50iDkKe98yH56cDsdW0PmlgPzMC9LDtcx2DH0Wg8/XiUJFr7kDkF5ie+/d2lgNpVmlZ8a/yOyrtNE164bFadGW2a1jWMWREmbH9ZjSZXRjVe+EpflaXeveQCJYQ5rGjY/wnXHuReOMzm22W/kEE0FF9zY71Fs0RWkBFNWo0sT1/sXc8CcMNfIGOTb74+BivitXkpp3m7ZdnDhffUPhaggmgQy1mB3cRnlIVUqihKd4JSQnv/5nNlHbXPFqN6+Z2aToH8/F0w5OeIpxX54c8h9ECtGj7iFnkP4/ZB5WZZ5XcPQjWM2V90avq1DEAX23GPap4p9piD3oLpipE9pTBXV36swy5iF/vnvMm//GJ6DHVC4YbqBi6vg53oYH1UwBQuqW1l6S56+JVRrP4xZ71nW+WJlOUqzHKxCTnZaWNq5Ke0nC96PqwRH3YhgIHf42c2O1A7BSh7kGpUNtJUxx3NP9UkEXp21+TsltlksKC1J3DznHzEuxRJj3mxxa+mLnc3BnEOvevJLOP8DiBXzNh0OOwrhy5ZLMKSKW4/taOrp09P1aGJFMWAUxhNRUyV+zvFBMVW+c1WaJa7Vl5oiHn3aEqcnt4iK5nzkhwWMtkJ9i7GafTV95mRjR8SyxUJwlJC0rkzfir+xJaUbRC3mvibv1bb2TawA64R5p7HuTUkXAEZRGsmyyxjSiX+9Q/3xxLaVh0gYCLE5rimKoJK+7lde+2vONPdALMujr2jBT9Oa6ie+TFVaRljRK9pX9kKsALYia4dOZVpUBUMxPaUr7wLZCbGczOQcDXnbpYYvLURfCMn7JFYUrK5p4KUPs6iacFUrxI6IbWXQqZMQ2YJBwpEfrmW2C2KgoDVuV/Mk4myavNuir9yVd8ftgRhoUcULdkIdYE2lY87Tch727rnTH0FsNKfUjaTkObFutK6nuUdkzTttuqB8uFtiYGY1UaOupm6hJ9/mnDknM50oszYS/NXbJO5NDIBXq0uSE80zhFQc/OlbUWPW5RQ397hs5uNP8IqzSL+GJ5BFIq3zdk4BRPXdQYEWozbmpViM5MRfXIwzF+fRxNoKkcb/vLjoE2oLXZEODE350znDlo6JGHLeAuzp1zYRhtBlVut+xOJ2Xuvx96p1VKTWUUFMs78/mfmXidiSmbYQ5bQuvtY/3JVrCGnMJXN2P2LdiaS+/t5rsmUnYzflj55n4XVRI5PN3ip41BcWkn+qjx0kxPvqEtd/P2JzhTyvSvf8n0gRkgvDRGXPcXLndD3KkoRIs+XPyu++Tagipe5heYmRvONSTNAgCjdiYCRPOuYvNBYMN+ENUV9TxcEK6x6EGj1Xe1aCGoSqS4o7dxSPccscVUVjnJ7Ikr/4BXSkeqf1F8gazVtDVowuvzpvsapoKdnZHssiiLOks9Jj1EdVwx4s/Mm/6+PBmvKs5pljMfjSGjSMDsGLDMk9ia0elvXEDU6tqd0CsrX4WLopTiHLiw+qxobrGl+Yqt3VeVhEEIFJp8YrsIjmfD/LC4SUQ8Q4QTjpBGuEXvWS7oAYSAjxQKCDCkhcXng/X1ZGMoPJeGx6SODrPpGHEwMUYYgGgAWRpjIX12rAAk9s0nVfTHmA9uM33JlY8BXSJTIFdqRCn7ohB+iyok3bY+TJ6WUDzIOJRYtqiIVHtUTam09WQsGAbEl9XskYVumSE9t7EeumBkNISgdRdof+00WolShMEHJ5k8H6gsacOxED2eviTREJyfpRSp3e7aQ9M0CP5ry/vIdbF3CJ3YfL8S7EojihTenzn7KuSTm06Gx/39u06hMtMMRls10dRHBNPrJV9yDWoVP+OBkINqSnOYvsPK4/cZOzqghyESIdfAO/oaw+aDy6PbGF4jJz2lq58xJac9aMLPTIoQt1O8NPZIKckAVEjkq0taRDVOl3i+C3JpazkuyCtrZZUjbpOa8aTwkGqCG9eJtBWnIDT8/1uMGU9bYeIW7ebTG9IbGtOJE3fd4WW2syavDfN06BvOPgqS/7i+9UEogSWE3fXh8tzuuRZCkp0Ts9EjcjFhVnayFOWQyznUfo9KO0G7Ph49h/orQGscfwx/vNCT9frEy2iHN3VmFvRUyhMieFzfO9JzBvrvSzxevIxV72b1Dx841vYPBl7bdlkAk25dlOvxsRa7EJ49g/98aTvBte+N3YfbLI+7LotlC46SPxJW1bi87c4n4bYtGn1WGiVMNh1np25SHeOYyuwlDXNnhCuzNR8TbElkbSZuSwyzG5cl/pP/kYsc1RsV6gs1Xgr6fsNsS6UzAejDhMp6tOyD+gxms/lwFgpsirNXGjGat71QjiZ5KuPpp8B0Dj6EkqZ32vGYvJxz6JTlbXn7m+h7XqZzcNAb/OFm6kigGlYVlZec1vvbkEtOKhY/dTxex84Anh6uPs4lpYdGrO5tQ3cx4g2Lfva/uNiMt8V+fxcBzEDmI7wW8i9thfAX8Ov4XYgQMHDhw4cODAgQMHDhw4cODAgQMHDvyf4H+iblaOuFShiQAAAABJRU5ErkJggg==">
+
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Leaders</a></li>
+                    <li><a href="">Explore army</a></li>
+                    <li><a href="">Contact us</a></li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+    </header>
+    <section id="sec1">
+        <div class="sec1external">
+            <div class="cen">
+                <h1>
+                    INDIAN ARMY WELCOMES YOU
+                </h1>
+                <P>Indian Army is based on land. Indian Air Force is based on the air while the Indian Navy is based on
+                    the water. In the world, Indian army is the second largest with close to 1.23 million personnel on
+                    the active roles and with 9.6 lakhs roles on reserve.</P>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+</body>
+
+</html>

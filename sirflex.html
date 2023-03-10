@@ -1,0 +1,101 @@
+headerflex.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .flexbox{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .headout{
+            width: 100%;
+            height: 100px;
+            /* background-color: rgb(48, 1, 48); */
+    
+        }
+        .logo{
+            width: 30%;
+        }
+        .navlist{
+            width: 60%;
+        }
+        .navlist li{
+            list-style-type: none;
+        }
+        .navlist a{
+            color: white;
+            font-size: 22px;
+        }
+        .navlist a:hover{
+            color: lightblue;
+        }
+        .sec1out{
+            min-height: 500px;
+            background-image: url("https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg");
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            background-size: cover;
+            background-position: center;
+        }
+        .sec1in{
+            width: 100%;
+            height: 250px;
+            position: relative;
+        }
+        .cen{
+            width: 40%;
+            background-color: rgba(0, 191, 255, 0.279);
+            position: relative;
+            top: 100%;
+            left: 50%;
+            color: white;
+            transform: translate(-50%,-50%);
+            border-radius: 18px;
+            box-shadow: 2px 4px 1px 0 rgba(241, 244, 251, 0.454);
+           }
+        .textbox{
+            text-align: center;
+            padding: 5px 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headout flexbox">
+            <div class="logo">
+                <img src="img/googlelogo_color_92x30dp.png" alt="">
+            </div>
+            <div class="navlist">
+                <ul class="flexbox">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+   <section>
+    <div class="sec1out">
+        <div class="sec1in">
+            <div class="cen textbox">
+                <h1>Welcome To Oytie</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptate officiis eaque eveniet doloribus maiores delectus impedit dicta dignissimos nihil. Quasi deserunt vero molestiae doloribus labore alias, ab ipsam officia.</p>
+            </div>
+        </div>
+    </div>
+   </section>
+</body>
+</html>

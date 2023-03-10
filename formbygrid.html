@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .template {
+
+            display: grid;
+            width: 95%;
+            height: 100vh;
+            grid-template-areas: "header header header" "sidebar main main" " footer footer footer";
+            gap: 20px;
+            text-align: center;
+            border:2px solid RED;
+            border-radius:3px;
+            padding:20px 20px;
+            /*background-color:orange*/
+           background-image:linear-gradient(45deg, rgb(219, 216, 207),rgb(219, 145, 7))
+        }
+        header,aside,main,footer{
+            background-color: white;
+        }
+
+        header {
+            border: 2px solid blue;
+            grid-area: header
+        }
+
+        aside {
+            border: 2px solid blue;
+            grid-area: sidebar
+        }
+
+        main {
+            border: 2px solid blue;
+            grid-area: main
+        }
+
+        footer {
+            border: 2px solid blue;
+            grid-area: footer
+        }
+    </style>
+</head>
+
+<body>
+    <div class="template">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <aside>
+            <h1>Sidebar</h1>
+        </aside>
+        <main>
+            <h1>Main</h1>
+        </main>
+        <footer>
+            <h1>Footer</h1>
+        </footer>
+    </div>
+
+</body>
+
+</html>
